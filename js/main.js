@@ -177,33 +177,33 @@
 //    Калькулятор
 
 
-// const arr = ['plus', 'minus', 'division', 'multiplication']
+const arr = ['plus', 'minus', 'division', 'multiplication']
 
 
-// function Calculator(array, firstNumber, SecondNumber, sign) {
-//     for (let i = 0; i < array.length; i++) {
-//         if (array[i] === sign) {
-//             if (sign === 'plus') {
-//                 let end = firstNumber + SecondNumber
-//                 console.log(end);
-//             }
-//             else if (sign === 'minus') {
-//                 let end = firstNumber - SecondNumber
-//                 console.log(end);
-//             }
-//             else if (sign === 'division') {
-//                 let end = firstNumber / SecondNumber
-//                 console.log(end);
-//             }
-//             else if (sign === 'multiplication') {
-//                 let end = firstNumber * SecondNumber
-//                 console.log(end);
-//             }
-//         }
-//     }
-// }
+function Calculator(array, firstNumber, SecondNumber, sign) {
+    for (let i = 0; i < array.length; i++) {
+        if (array[i] === sign) {
+            if (sign === 'plus') {
+                let end = firstNumber + SecondNumber
+                console.log(end);
+            }
+            else if (sign === 'minus') {
+                let end = firstNumber - SecondNumber
+                console.log(end);
+            }
+            else if (sign === 'division') {
+                let end = firstNumber / SecondNumber
+                console.log(end);
+            }
+            else if (sign === 'multiplication') {
+                let end = firstNumber * SecondNumber
+                console.log(end);
+            }
+        }
+    }
+}
 
-// console.log(Calculator(arr, 10, 10, 'multiplication'));  //  Вывод в консоль = 100
+console.log(Calculator(arr, 10, 10, 'multiplication'));  //  Вывод в консоль = 100
 
 
 
@@ -213,15 +213,15 @@
 
 
 
-const user = {
-    alex: {
-        age: 23,
-        isAdmin: false
-    },
-    john: {
-        age: 26,
-        isAdmin: true
-    },
-}
+// const user = {
+//     alex: {
+//         age: 23,
+//         isAdmin: false
+//     },
+//     john: {
+//         age: 26,
+//         isAdmin: true
+//     },
+// }
 
-console.log(user.alex);
+// console.log(user.alex);
