@@ -1,7 +1,7 @@
 // const age = 18
 // age >= 18 ? console.log('Вы совершеннолетний') : console.log('Вам еще нет 18!');;
 
-// if (ageAnton >= 18) {
+// if (age >= 18) {
 //     console.log('Вы совершеннолетний');
 // }
 // else {
