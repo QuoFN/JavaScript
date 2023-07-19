@@ -205,23 +205,3 @@ function Calculator(array, firstNumber, SecondNumber, sign) {
 
 console.log(Calculator(arr, 10, 10, 'multiplication'));  //  Вывод в консоль = 100
 
-
-
-
-
-//       О Б Ъ Е К Т Ы         //
-
-
-
-// const user = {
-//     alex: {
-//         age: 23,
-//         isAdmin: false
-//     },
-//     john: {
-//         age: 26,
-//         isAdmin: true
-//     },
-// }
-
-// console.log(user.alex);
