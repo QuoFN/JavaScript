@@ -1,3 +1,6 @@
+'use strict'  // Строгий режим
+
+
 
 //       У С Л О В И Я         //
 
@@ -177,31 +180,274 @@
 //    Калькулятор
 
 
-const arr = ['plus', 'minus', 'division', 'multiplication']
+// const arr = ['plus', 'minus', 'division', 'multiplication']
 
 
-function Calculator(array, firstNumber, SecondNumber, sign) {
-    for (let i = 0; i < array.length; i++) {
-        if (array[i] === sign) {
-            if (sign === 'plus') {
-                let end = firstNumber + SecondNumber
-                console.log(end);
-            }
-            else if (sign === 'minus') {
-                let end = firstNumber - SecondNumber
-                console.log(end);
-            }
-            else if (sign === 'division') {
-                let end = firstNumber / SecondNumber
-                console.log(end);
-            }
-            else if (sign === 'multiplication') {
-                let end = firstNumber * SecondNumber
-                console.log(end);
-            }
-        }
-    }
+// function calculator(firstNumber, SecondNumber, sign) {
+
+//     if (sign === 'plus') {
+//         let end = firstNumber + SecondNumber
+//         return end
+//     }
+//     else if (sign === 'minus') {
+//         let end = firstNumber - SecondNumber
+//         return end
+//     }
+//     else if (sign === 'division') {
+//         let end = firstNumber / SecondNumber
+//         return end
+//     }
+//     else if (sign === 'multiplication') {
+//         let end = firstNumber * SecondNumber
+//         return end
+//     }
+// }
+
+// console.log(calculator(10, 10, 'multiplication'));  //  Вывод в консоль = 100
+
+
+
+
+//       О Б Ъ Е К Т Ы          //
+
+
+// const namesMyFriends = {
+
+//     NameFirstFriend: {
+//         Name: 'Anton',
+//         age: 18,
+//         weight: 55,
+//     },
+//     NameSecondFriend: {
+//         Name: 'Saveliy',
+//         age: 16,
+//         weight: 60,
+//     }
+// }
+
+// console.log(namesMyFriends.NameFirstFriend);
+
+
+
+
+// const myName = {
+//     Name: 'Saveliy',
+//     age: 16,
+//     weight: 60,
+//     sayHello(Names) {
+//         console.log(`Hello ${Names}!`);
+//     }
+// }
+
+// myName.sayHello('Alexa')
+
+
+
+//   1
+
+// const myName = {
+//     Name: 'Saveliy',
+//     age: 16,
+//     weight: 60,
+// }
+
+
+
+// const arr = [
+//     {
+//         Name: 'Kenny',
+//         age: 20,
+//         isAdmin: true,
+//     },
+//     {
+//         Name: 'John',
+//         age: 24,
+//         isAdmin: false,
+//     },
+// ]
+
+// arr.push({
+//     Name: 'Ivan',
+//     age: 24,
+//     isAdmin: false,
+// })
+
+// for (let i = 0; i < arr.length; i++) {
+//     console.log(`${arr[i].Name} Админ: ${arr[i].isAdmin}`);
+// }
+
+// const hi = 'hello world!'
+
+// console.log(hi.toUpperCase());
+
+// console.log(arr.reverse());
+
+
+
+//   2
+
+// const array = [
+//     {
+//         sayName(name) {
+//             return `Hello ${name}!`
+//         }
+//     }
+// ]
+
+// for (let i = 0; i < array.length; i++) {
+//     console.log(array[i].sayName('Tom'));
+// }
+
+
+
+//   3
+
+// let defaultUsers = 0
+
+// const array = [
+//     {
+//         Name: 'Alex',
+//         age: 32,
+//         isAdmin: true
+//     },
+//     {
+//         Name: 'Vlad',
+//         age: 21,
+//         isAdmin: false
+//     },
+//     {
+//         Name: 'Michail',
+//         age: 16,
+//         isAdmin: false
+//     },
+//     {
+//         Name: 'Denis',
+//         age: 18,
+//         isAdmin: false
+//     },
+//     {
+//         Name: 'Alisa',
+//         age: 35,
+//         isAdmin: true
+//     },
+//     {
+//         Name: 'Dima',
+//         age: 23,
+//         isAdmin: false
+//     },
+// ]
+
+// for (let i = 0; i < array.length; i++) {
+//     if (array[i].isAdmin != true) {
+//         defaultUsers++
+//         console.log(defaultUsers);
+//     }
+// }
+
+
+
+
+//         М Е Т О Д Ы  М А С С И В О В           //
+
+
+// const array = [
+//     {
+//         Name: 'Alex',
+//         age: 17,
+//     },
+//     {
+//         Name: 'Robert',
+//         age: 22,
+//     },
+//     {
+//         Name: 'Milana',
+//         age: 26,
+//     },
+// ]
+
+// const users = []
+
+// array.forEach((user) => {
+//     users.push(user.Name)
+// });
+
+// console.log(users);
+
+
+// const numbers = [2, 5, 76, 23, 11, 10, 67, 34, 12, 4, 3, 6, 8, 9, 38]
+
+// const result = numbers.filter(function(min) {
+//     return min > 10
+// })
+
+// console.log(result);
+
+// const test = [4, 5, 6, 7, 8]
+
+// let all = test.unshift()
+
+// console.log(test)
+
+// console.log(all);
+
+
+
+//         Document Object Model           //
+
+
+// const elements = document.querySelectorAll('div')
+// const blocks = document.querySelector('.blocks')
+
+// blocks.style.display = 'flex'
+// blocks.style.justifyContent = 'center'
+// blocks.style.alignItems = 'center'
+
+// elements.forEach((element) => {
+//     element.style.color = '#fff'
+//     element.style.fontSize = '2em'
+//     element.style.marginRight = '3.125rem'
+// });
+
+// console.log(elements);
+
+
+// const button = document.querySelector('.btn')
+
+// button.addEventListener('click', () =>{
+//     button.classList.toggle('green--btn')
+// })
+
+
+
+
+//         М О Д А Л Ь Н О Е  О К Н О            //
+
+
+const button = document.querySelector('.btn-open')
+const modal = document.querySelector('.modal')
+const body = document.body
+
+const openModal = () => {
+    modal.classList.add('modal--open')
+    body.classList.add('scroll--fixed')
 }
 
-console.log(Calculator(arr, 10, 10, 'multiplication'));  //  Вывод в консоль = 100
+const closeModal = () => {
+    modal.classList.remove('modal--open')
+    body.classList.remove('scroll--fixed')
+}
 
+button.addEventListener('click', openModal)
+
+modal.addEventListener('click', event => {
+    const target = event.target
+    if (target && target.classList.contains('modal') || target.classList.contains('modal__close-btn')) {
+        closeModal()
+    }
+})
+
+document.addEventListener('keydown', event => {
+    if(event.code === 'Escape' && modal.classList.contains('modal--open')) {
+        closeModal()
+    }
+})
